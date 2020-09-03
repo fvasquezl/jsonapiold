@@ -7,7 +7,9 @@
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/test.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/test.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/JsonApiBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/JsonApiBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,9 +144,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
-  <component name="RunManager" selected="PHPUnit.FilterArticlesTest.can_filter_articles_by_month">
+  <component name="RunManager" selected="PHPUnit.FilterArticlesTest.cannot_filter_articles_by_unknown_filters">
+    <configuration name="FilterArticlesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <configuration name="FilterArticlesTest.can_filter_articles_by_content" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_content" scope="Method" />
       <method v="2" />
@@ -157,25 +163,21 @@
       <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_title" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticlesTest.can_filter_articles_by_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_year" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ListArticleTest.can_fetch_all_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\ListArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" method="can_fetch_all_articles" scope="Method" />
+    <configuration name="FilterArticlesTest.cannot_filter_articles_by_unknown_filters" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="cannot_filter_articles_by_unknown_filters" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_month" />
-        <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_year" />
+        <item itemvalue="PHPUnit.FilterArticlesTest.cannot_filter_articles_by_unknown_filters" />
+        <item itemvalue="PHPUnit.FilterArticlesTest" />
         <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_content" />
         <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_title" />
-        <item itemvalue="PHPUnit.ListArticleTest.can_fetch_all_articles" />
+        <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_month" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +191,7 @@
       <updated>1597764348100</updated>
       <workItem from="1597764349759" duration="75000" />
       <workItem from="1597876837473" duration="7156000" />
-      <workItem from="1598977010660" duration="15938000" />
+      <workItem from="1598977010660" duration="19303000" />
     </task>
     <servers />
   </component>
@@ -205,6 +207,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2532" y="89" width="690" height="897" key="#PHP/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597878391892" />
+    <state x="2338" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599166532570">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2338" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599166532570" />
     <state x="1920" y="595" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597967012008">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -213,10 +219,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2550" y="331" width="649" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597877505838" />
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599162218051">
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599166246070">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599162218051" />
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599166246070" />
     <state x="2628" y="402" width="494" height="274" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1597877383462">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -225,46 +231,46 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599169121169">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
+    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599169121169">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
+    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599169121169">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
+    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599169121169">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599169121095">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
+    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599169121095">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
+    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599169121095">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599164092411">
+    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599169121095">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599164092411" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599158207786">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599158207786" />
-    <state x="2272" y="104" key="SettingsEditor" timestamp="1597764424058">
+    <state x="2272" y="104" key="SettingsEditor" timestamp="1599168359525">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2272" y="104" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597764424058" />
+    <state x="2272" y="104" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599168359525" />
     <state x="1950" y="0" width="1849" height="1078" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1597965971933">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
