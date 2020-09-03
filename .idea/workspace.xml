@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/JsonApiBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/JsonApiBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" afterDir="false" />
     </list>
@@ -146,7 +144,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
-  <component name="RunManager" selected="PHPUnit.FilterArticlesTest.cannot_filter_articles_by_unknown_filters">
+  <component name="RunManager" selected="PHPUnit.FilterArticlesTest.can_search_articles_by_title_and_content_with_multiple_terms">
     <configuration name="FilterArticlesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" scope="Class" />
       <method v="2" />
@@ -155,12 +153,12 @@
       <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_content" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticlesTest.can_filter_articles_by_month" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_month" scope="Method" />
+    <configuration name="FilterArticlesTest.can_search_articles_by_title_and_content" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_search_articles_by_title_and_content" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FilterArticlesTest.can_filter_articles_by_title" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_filter_articles_by_title" scope="Method" />
+    <configuration name="FilterArticlesTest.can_search_articles_by_title_and_content_with_multiple_terms" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\FilterArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" method="can_search_articles_by_title_and_content_with_multiple_terms" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="FilterArticlesTest.cannot_filter_articles_by_unknown_filters" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -173,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FilterArticlesTest.can_search_articles_by_title_and_content_with_multiple_terms" />
+        <item itemvalue="PHPUnit.FilterArticlesTest.can_search_articles_by_title_and_content" />
         <item itemvalue="PHPUnit.FilterArticlesTest.cannot_filter_articles_by_unknown_filters" />
         <item itemvalue="PHPUnit.FilterArticlesTest" />
         <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_content" />
-        <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_title" />
-        <item itemvalue="PHPUnit.FilterArticlesTest.can_filter_articles_by_month" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +189,7 @@
       <updated>1597764348100</updated>
       <workItem from="1597764349759" duration="75000" />
       <workItem from="1597876837473" duration="7156000" />
-      <workItem from="1598977010660" duration="19303000" />
+      <workItem from="1598977010660" duration="20431000" />
     </task>
     <servers />
   </component>
@@ -231,38 +229,38 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599169121169">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599170274270">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
-    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599169121169">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274270" />
+    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599170274270">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
-    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599169121169">
+    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274270" />
+    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599170274270">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
-    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599169121169">
+    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274270" />
+    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599170274270">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121169" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599169121095">
+    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274270" />
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599170274189">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599169121095">
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274189" />
+    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599170274189">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599169121095">
+    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274189" />
+    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599170274189">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599169121095">
+    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274189" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599170274189">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169121095" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599170274189" />
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599158207786">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -279,9 +277,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597878328757" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599163127603">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599169871396">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599163127603" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599169871396" />
   </component>
 </project>
