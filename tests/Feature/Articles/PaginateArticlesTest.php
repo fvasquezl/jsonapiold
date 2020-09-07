@@ -12,23 +12,10 @@ class PaginateArticlesTest extends TestCase
     /** @test */
     public function can_fetch_paginated_articles()
     {
-        $articles = factory(Article::class)->times(10)->create();
+        factory(Article::class)->times(10)->create();
         $url = route('api.v1.articles.index',['page[size]'=>2,'page[number]'=>3]);
 
         $response = $this->jsonApi()->get($url);
-
-        $response->assertJsonCount(2,'data')
-            ->assertDontSee($articles[0]->title)
-            ->assertDontSee($articles[1]->title)
-            ->assertDontSee($articles[2]->title)
-            ->assertDontSee($articles[3]->title)
-            ->assertSee($articles[4]->title)
-            ->assertSee($articles[5]->title)
-            ->assertDontSee($articles[6]->title)
-            ->assertDontSee($articles[7]->title)
-            ->assertDontSee($articles[8]->title)
-            ->assertDontSee($articles[9]->title)
-        ;
 
         $response->assertJsonStructure([
             'links' => ['first','last','prev','next']
