@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,25 +153,25 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
-  <component name="RunManager" selected="PHPUnit.UpdateArticlesTest.can_update_the_slug_only">
-    <configuration name="PaginateArticlesTest.can_fetch_paginated_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\PaginateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticlesTest.php" method="can_fetch_paginated_articles" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.DeleteArticlesTest">
+    <configuration name="DeleteArticlesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateArticlesTest.authenticated_users_can_update_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" method="authenticated_users_can_update_articles" scope="Method" />
+    <configuration name="DeleteArticlesTest.authenticated_users_can_delete_their_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="authenticated_users_can_delete_their_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateArticlesTest.can_update_the_slug_only" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" method="can_update_the_slug_only" scope="Method" />
+    <configuration name="DeleteArticlesTest.authenticated_users_cannot_delete_others_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="authenticated_users_cannot_delete_others_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateArticlesTest.can_update_the_title_only" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" method="can_update_the_title_only" scope="Method" />
+    <configuration name="DeleteArticlesTest.guest_users_cannot_delete_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="guest_users_cannot_delete_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateArticlesTest.guest_users_cannot_update_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" method="guest_users_cannot_update_articles" scope="Method" />
+    <configuration name="UpdateArticlesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.UpdateArticlesTest.can_update_the_slug_only" />
-        <item itemvalue="PHPUnit.UpdateArticlesTest.can_update_the_title_only" />
-        <item itemvalue="PHPUnit.UpdateArticlesTest.authenticated_users_can_update_articles" />
-        <item itemvalue="PHPUnit.UpdateArticlesTest.guest_users_cannot_update_articles" />
-        <item itemvalue="PHPUnit.PaginateArticlesTest.can_fetch_paginated_articles" />
+        <item itemvalue="PHPUnit.DeleteArticlesTest" />
+        <item itemvalue="PHPUnit.DeleteArticlesTest.authenticated_users_cannot_delete_others_articles" />
+        <item itemvalue="PHPUnit.DeleteArticlesTest.authenticated_users_can_delete_their_articles" />
+        <item itemvalue="PHPUnit.DeleteArticlesTest.guest_users_cannot_delete_articles" />
+        <item itemvalue="PHPUnit.UpdateArticlesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,38 +242,38 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="168" key="GridCell.Tab.0.bottom" timestamp="1599516408601">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="168" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516408601" />
-    <state width="1872" height="168" key="GridCell.Tab.0.center" timestamp="1599516408601">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="168" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516408601" />
-    <state width="1872" height="168" key="GridCell.Tab.0.left" timestamp="1599516408601">
+    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="168" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516408601" />
-    <state width="1872" height="168" key="GridCell.Tab.0.right" timestamp="1599516408601">
+    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="168" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516408601" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599516161971">
+    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516161971" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599516161971">
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516161971" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599516161971">
+    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516161971" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599516161971">
+    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599518828386">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599516161971" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518828386" />
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599158207786">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -289,9 +290,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599174701226" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599515624567">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599518704841">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599515624567" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599518704841" />
   </component>
 </project>
