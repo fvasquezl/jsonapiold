@@ -18,7 +18,7 @@ class DeleteArticlesTest extends TestCase
         $article = factory(Article::class)->create();
 
         $this->jsonApi()->delete(route('api.v1.articles.delete',$article))
-            ->assertStatus(401); //Not authenticated
+            ->assertStatus(401); //Unauthenticated
 
     }
 
