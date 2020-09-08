@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Traits/HasUuid.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traits/HasUuid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Aricles/IncludeAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Aricles/IncludeAuthorsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -245,38 +242,38 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599605591083">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599606222848">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591083" />
-    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599605591083">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222848" />
+    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599606222848">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591083" />
-    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599605591083">
+    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222848" />
+    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599606222848">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591083" />
-    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599605591083">
+    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222848" />
+    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599606222848">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591083" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599605591025">
+    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222848" />
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599606222732">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591025" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599605591024">
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222732" />
+    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599606222732">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591024" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599605591024">
+    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222732" />
+    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599606222732">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591024" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599605591024">
+    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222732" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599606222732">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605591024" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606222732" />
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599604626841">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -293,9 +290,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599174701226" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599605641137">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599606233983">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599605641137" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599606233983" />
   </component>
 </project>
