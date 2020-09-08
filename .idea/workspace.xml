@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/Traits/HasUuid.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/json-api-v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/json-api-v1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_19_224831_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_19_224831_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Authors/ListAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Authors/ListAuthorsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,13 +156,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
   </component>
-  <component name="RunManager" selected="PHPUnit.ListAuthorsTest.can_fetch_single_author">
+  <component name="RunManager" selected="PHPUnit.DeleteArticlesTest.authenticated_users_can_delete_their_articles">
     <configuration name="CreateArticlesTest.authenticated_users_can_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="authenticated_users_can_create_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.guest_users_cannot_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="guest_users_cannot_create_articles" scope="Method" />
+    <configuration name="DeleteArticlesTest.authenticated_users_can_delete_their_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\DeleteArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" method="authenticated_users_can_delete_their_articles" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="DeleteArticlesTest.guest_users_cannot_delete_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -183,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.DeleteArticlesTest.authenticated_users_can_delete_their_articles" />
         <item itemvalue="PHPUnit.ListAuthorsTest.can_fetch_single_author" />
         <item itemvalue="PHPUnit.ListAuthorsTest.can_fetch_all_authors" />
         <item itemvalue="PHPUnit.DeleteArticlesTest.guest_users_cannot_delete_articles" />
         <item itemvalue="PHPUnit.CreateArticlesTest.authenticated_users_can_create_articles" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.guest_users_cannot_create_articles" />
       </list>
     </recent_temporary>
   </component>
@@ -229,10 +229,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2550" y="331" width="649" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597877505838" />
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599166246070">
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599604634319">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599166246070" />
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604634319" />
     <state x="2657" y="301" width="436" height="475" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1599512232000">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -245,42 +245,42 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599520951688">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom" timestamp="1599604499039">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951688" />
-    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599520951688">
+    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499039" />
+    <state width="1872" height="275" key="GridCell.Tab.0.center" timestamp="1599604499039">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951688" />
-    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599520951688">
+    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499039" />
+    <state width="1872" height="275" key="GridCell.Tab.0.left" timestamp="1599604499039">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951688" />
-    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599520951688">
+    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499039" />
+    <state width="1872" height="275" key="GridCell.Tab.0.right" timestamp="1599604499039">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951688" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599520951636">
+    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499039" />
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom" timestamp="1599604499040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951636" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599520951636">
+    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499040" />
+    <state width="1872" height="275" key="GridCell.Tab.1.center" timestamp="1599604499040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951636" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599520951636">
+    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499040" />
+    <state width="1872" height="275" key="GridCell.Tab.1.left" timestamp="1599604499040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951636" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599520951636">
+    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499040" />
+    <state width="1872" height="275" key="GridCell.Tab.1.right" timestamp="1599604499040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520951636" />
-    <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599158207786">
+    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604499040" />
+    <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599604626841">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599158207786" />
+    <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604626841" />
     <state x="2272" y="104" key="SettingsEditor" timestamp="1599168359525">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -293,9 +293,9 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599174701226" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599520481500">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599604459161">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599520481500" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604459161" />
   </component>
 </project>
