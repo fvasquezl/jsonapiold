@@ -56,4 +56,9 @@ class Adapter extends AbstractAdapter
         $article->user_id = auth()->id();
     }
 
+    public function authors()
+    {
+        return $this->belongsTo('user');
+    }
+
 }
