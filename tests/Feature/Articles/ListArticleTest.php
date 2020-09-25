@@ -13,7 +13,7 @@ class ListArticleTest extends TestCase
     /** @test */
     public function can_fetch_single_article()
     {
-        $article = factory(Article::class)->create();
+        $article = Article::factory()->create();
         $response = $this->jsonApi()->get(route('api.v1.articles.read', $article));
         $response->assertJson([
             'data' => [
@@ -41,7 +41,7 @@ class ListArticleTest extends TestCase
     /** @test */
     public function can_fetch_all_articles()
     {
-        $articles = factory(Article::class)->times(3)->create();
+        $articles = Article::factory()->times(3)->create();
         $response = $this->jsonApi()->get(route('api.v1.articles.index'));
         $response->assertJson([
             'data' => [

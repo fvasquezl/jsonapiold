@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Aricles;
+namespace Tests\Feature\Articles;
 
 use App\Models\Article;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -13,7 +13,7 @@ class IncludeAuthorsTest extends TestCase
     /** @test */
     public function can_include_authors()
     {
-        $article =factory(Article::class)->create();
+        $article =Article::factory()->create();
 
       //  $url = route('api.v1.articles.read',$article).'?include=authors';
 
@@ -34,7 +34,7 @@ class IncludeAuthorsTest extends TestCase
     /** @test */
     public function can_fetch_related_authors()
     {
-        $article =factory(Article::class)->create();
+        $article =Article::factory()->create();
 
         $this->jsonApi()
             ->get(route('api.v1.articles.relationships.authors',$article))

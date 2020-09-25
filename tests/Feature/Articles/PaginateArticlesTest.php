@@ -12,7 +12,7 @@ class PaginateArticlesTest extends TestCase
     /** @test */
     public function can_fetch_paginated_articles()
     {
-        factory(Article::class)->times(10)->create();
+        Article::factory()->times(10)->create();
         $url = route('api.v1.articles.index',['page[size]'=>2,'page[number]'=>3]);
 
         $response = $this->jsonApi()->get($url);

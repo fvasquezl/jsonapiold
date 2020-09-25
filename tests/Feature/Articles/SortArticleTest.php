@@ -14,9 +14,9 @@ class SortArticleTest extends TestCase
     /** @test */
     public function it_can_sort_articles_by_title_asc()
     {
-        $article1 = factory(Article::class)->create(['title'=>'C Title']);
-        $article2 = factory(Article::class)->create(['title'=>'B Title']);
-        $article3 = factory(Article::class)->create(['title'=>'A Title']);
+        $article1 = Article::factory()->create(['title'=>'C Title']);
+        $article2 = Article::factory()->create(['title'=>'B Title']);
+        $article3 = Article::factory()->create(['title'=>'A Title']);
         $url = route('api.v1.articles.index',['sort'=> 'title']);
 
         $this->jsonApi()->get($url)->assertSeeInOrder([
@@ -30,9 +30,9 @@ class SortArticleTest extends TestCase
     /** @test */
     public function it_can_sort_articles_by_title_desc()
     {
-        $article1 = factory(Article::class)->create(['title'=>'C Title']);
-        $article2 = factory(Article::class)->create(['title'=>'B Title']);
-        $article3 = factory(Article::class)->create(['title'=>'A Title']);
+        $article1 = Article::factory()->create(['title'=>'C Title']);
+        $article2 = Article::factory()->create(['title'=>'B Title']);
+        $article3 = Article::factory()->create(['title'=>'A Title']);
         $url = route('api.v1.articles.index',['sort'=>'-title']);
 
         $this->jsonApi()->get($url)->assertSeeInOrder([
@@ -46,15 +46,15 @@ class SortArticleTest extends TestCase
     /** @test */
     public function it_can_sort_articles_by_title_and_content()
     {
-        $article1 = factory(Article::class)->create([
+        $article1 = Article::factory()->create([
             'title'=>'C Title',
             'content'=> 'B content'
             ]);
-        $article2 = factory(Article::class)->create([
+        $article2 = Article::factory()->create([
             'title'=>'B Title',
             'content'=> 'C content'
             ]);
-        $article3 = factory(Article::class)->create([
+        $article3 = Article::factory()->create([
             'title'=>'A Title',
             'content'=> 'D content'
             ]);
@@ -86,7 +86,7 @@ class SortArticleTest extends TestCase
     /** @test */
     public function it_cannot_sort_articles_by_unknown_fields()
     {
-        $article1 = factory(Article::class)->times(3)->create();
+        $article1 = Article::factory()->times(3)->create();
 
         $url = route('api.v1.articles.index').'?sort=unknown';
 
