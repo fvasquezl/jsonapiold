@@ -30,7 +30,10 @@ class CreateArticlesTest extends TestCase
     {
         $user = User::factory()->create();
 
-        $article = array_filter(Article::factory()->raw(['user_id' => null]));
+        $article = array_filter(Article::factory()->raw([
+            'category_id' => null,
+            ])
+        );
 
         $this->assertDatabaseMissing('articles', $article);
 
@@ -38,8 +41,9 @@ class CreateArticlesTest extends TestCase
 
         $this->jsonApi()->withData([
             'type' => 'articles',
-            'attributes' => $article
-        ])->post(route('api.v1.articles.create'))->assertCreated();
+            'attributes' => $article,
+        ])->post(route('api.v1.articles.create'))->dump()
+            ->assertCreated();
 
         $this->assertDatabaseHas('articles', [
             'user_id' => $user->id,
@@ -181,7 +185,9 @@ class CreateArticlesTest extends TestCase
 
         $this->jsonApi()->withData([
             'type' => 'articles',
-            'attributes' => $article
+            'attributes' => $article,
+            'approved' =>true
+
         ])->post(route('api.v1.articles.create'))
             ->assertSee(trans('validation.no_ending_dashes', ['attribute' => 'slug']))
             ->assertStatus(422)

@@ -28,9 +28,7 @@ class UpdateArticlesTest extends TestCase
 
         Sanctum::actingAs($article->user);
 
-        $this->jsonApi()
-            ->content([
-                'data' => [
+        $this->jsonApi()->withData([
                     'type' => 'articles',
                     'id' => $article->getRouteKey(),
                     'attributes' => [
@@ -38,7 +36,6 @@ class UpdateArticlesTest extends TestCase
                         'slug' => 'title-changed',
                         'content' => 'Content changed'
                     ]
-                ]
             ])
             ->patch(route('api.v1.articles.update', $article))
             ->assertStatus(200);
@@ -57,9 +54,7 @@ class UpdateArticlesTest extends TestCase
 
         Sanctum::actingAs($user = User::factory()->create());
 
-        $this->jsonApi()
-            ->content([
-                'data' => [
+        $this->jsonApi()->withData([
                     'type' => 'articles',
                     'id' => $article->getRouteKey(),
                     'attributes' => [
@@ -67,7 +62,6 @@ class UpdateArticlesTest extends TestCase
                         'slug' => 'title-changed',
                         'content' => 'Content changed'
                     ]
-                ]
             ])
             ->patch(route('api.v1.articles.update', $article))
             ->assertStatus(403);
@@ -86,15 +80,12 @@ class UpdateArticlesTest extends TestCase
 
         Sanctum::actingAs($article->user);
 
-        $this->jsonApi()
-            ->content([
-                'data' => [
+        $this->jsonApi()->withData([
                     'type' => 'articles',
                     'id' => $article->getRouteKey(),
                     'attributes' => [
                         'title' => 'Title changed',
                     ]
-                ]
             ])
             ->patch(route('api.v1.articles.update', $article))
             ->assertStatus(200);
@@ -111,15 +102,12 @@ class UpdateArticlesTest extends TestCase
 
         Sanctum::actingAs($article->user);
 
-        $this->jsonApi()
-            ->content([
-                'data' => [
+        $this->jsonApi()->withData([
                     'type' => 'articles',
                     'id' => $article->getRouteKey(),
                     'attributes' => [
                         'slug' => 'slug-changed',
                     ]
-                ]
             ])
             ->patch(route('api.v1.articles.update', $article))
             ->assertStatus(200);

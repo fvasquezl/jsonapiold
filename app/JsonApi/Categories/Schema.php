@@ -1,8 +1,8 @@
 <?php
 
-namespace App\JsonApi\Authors;
+namespace App\JsonApi\Categories;
 
-use App\Models\User;
+use App\Models\Category;
 use Neomerx\JsonApi\Schema\SchemaProvider;
 
 class Schema extends SchemaProvider
@@ -11,10 +11,10 @@ class Schema extends SchemaProvider
     /**
      * @var string
      */
-    protected $resourceType = 'authors';
+    protected $resourceType = 'categories';
 
     /**
-     * @param User $resource
+     * @param Category $resource
      *      the domain record being serialized.
      * @return string
      */
@@ -24,7 +24,7 @@ class Schema extends SchemaProvider
     }
 
     /**
-     * @param User $resource
+     * @param Category $resource
      *      the domain record being serialized.
      * @return array
      */
@@ -32,8 +32,7 @@ class Schema extends SchemaProvider
     {
         return [
             'name' => $resource->name,
-            'created-at' => $resource->created_at->toAtomString(),
-            'updated-at' => $resource->updated_at->toAtomString(),
+            'slug'=> $resource->slug,
         ];
     }
 

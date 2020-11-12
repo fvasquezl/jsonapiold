@@ -15,7 +15,7 @@ class Validators extends AbstractValidators
      * @var string[]|null
      *      the allowed paths, an empty array for none allowed, or null to allow all paths.
      */
-    protected $allowedIncludePaths = ['authors'];
+    protected $allowedIncludePaths = ['authors','categories'];
 
     /**
      * The sort field names a client is allowed send.
@@ -47,7 +47,7 @@ class Validators extends AbstractValidators
             'slug' => [
                 'required',
                 'alpha_dash',
-                new Slug(),
+                new Slug,
                 Rule::unique('articles')->ignore($record)
             ],
             'content' => ['required']

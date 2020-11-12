@@ -1,8 +1,10 @@
 <?php
 
-namespace App\JsonApi\Authors;
+namespace App\JsonApi\Categories;
 
+use App\Rules\Slug;
 use CloudCreativity\LaravelJsonApi\Validation\AbstractValidators;
+use Illuminate\Validation\Rule;
 
 class Validators extends AbstractValidators
 {
@@ -36,12 +38,20 @@ class Validators extends AbstractValidators
      *
      * @param mixed|null $record
      *      the record being updated, or null if creating a resource.
-     * @return mixed
+     * @param array $data
+     *      the data being validated
+     * @return array
      */
-    protected function rules($record, $data): array
+    protected function rules($record, array $data): array
     {
         return [
-            //
+           'name' => ['required'],
+            'slug' => [
+                'required',
+                'alpha_dash',
+                new Slug,
+                Rule::unique('categories')->ignore($record)
+            ],
         ];
     }
 

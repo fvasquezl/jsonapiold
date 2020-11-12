@@ -15,6 +15,12 @@ class Category extends Model
      */
     protected $guarded = [];
 
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     /**
      * The attributes that should be cast to native types.
      *
@@ -27,6 +33,6 @@ class Category extends Model
 
     public function articles()
     {
-        return $this->hasMany(\App\Models\Article::class);
+        return $this->hasMany(Article::class);
     }
 }

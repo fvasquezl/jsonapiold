@@ -39,7 +39,7 @@ class DeleteArticlesTest extends TestCase
     {
         $article = Article::factory()->create();
 
-        Sanctum::actingAs($user = User::factory()->create());
+        Sanctum::actingAs(User::factory()->create());
 
         $this->jsonApi()->delete(route('api.v1.articles.delete',$article))
             ->assertStatus(403); //Unauthorized

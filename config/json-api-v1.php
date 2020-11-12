@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Article;
+use App\Models\Category;
+use App\Models\User;
+
 return [
 
     /*
@@ -66,8 +70,9 @@ return [
     | `'posts' => App\Post::class`
     */
     'resources' => [
-        'authors' => \App\Models\User::class,
-        'articles' => \App\Models\Article::class,
+        'authors' => User::class,
+        'articles' => Article::class,
+        'categories' => Category::class,
     ],
 
     /*

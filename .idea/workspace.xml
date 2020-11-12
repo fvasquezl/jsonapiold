@@ -5,32 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsonapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonapi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Schema.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Authors/Schema.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Authors/Schema.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Authors/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Authors/Validators.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ArticleFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/factory.stub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stubs/seeder.stub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Aricles/IncludeAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/json-api-v1.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/json-api-v1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/DeleteArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/PaginateArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/SortArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/SortArticleTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Authors/ListAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Authors/ListAuthorsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,31 +167,32 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Debugger" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/Feature/Articles" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CreateArticlesTest.guest_users_cannot_create_articles">
-    <configuration name="CreateArticlesTest.authenticated_users_can_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="authenticated_users_can_create_articles" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.IncludeArticlesTest.can_fetch_related_articles (1)">
+    <configuration name="IncludeArticlesTest.can_fetch_related_articles (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Authors\IncludeArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Authors/IncludeArticlesTest.php" method="can_fetch_related_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.guest_users_cannot_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="guest_users_cannot_create_articles" scope="Method" />
+    <configuration name="IncludeArticlesTest.can_include_articles (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Authors\IncludeArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Authors/IncludeArticlesTest.php" method="can_include_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="IncludeAuthorsTest.can_fetch_related_authors" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Aricles\IncludeAuthorsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" method="can_fetch_related_authors" scope="Method" />
+    <configuration name="IncludeCategoriesTest.can_fetch_related_categories" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\IncludeCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeCategoriesTest.php" method="can_fetch_related_categories" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="IncludeAuthorsTest.can_include_authors" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Aricles\IncludeAuthorsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" method="can_include_authors" scope="Method" />
+    <configuration name="IncludeCategoriesTest.can_include_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\IncludeCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeCategoriesTest.php" method="can_include_articles" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ListArticleTest.can_fetch_single_article" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\ListArticleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/ListArticleTest.php" method="can_fetch_single_article" scope="Method" />
+    <configuration name="IncludeCategoriesTest.can_include_categories" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Articles\IncludeCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/IncludeCategoriesTest.php" method="can_include_categories" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -213,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.CreateArticlesTest.guest_users_cannot_create_articles" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.authenticated_users_can_create_articles" />
-        <item itemvalue="PHPUnit.IncludeAuthorsTest.can_include_authors" />
-        <item itemvalue="PHPUnit.ListArticleTest.can_fetch_single_article" />
-        <item itemvalue="PHPUnit.IncludeAuthorsTest.can_fetch_related_authors" />
+        <item itemvalue="PHPUnit.IncludeArticlesTest.can_fetch_related_articles (1)" />
+        <item itemvalue="PHPUnit.IncludeArticlesTest.can_include_articles (1)" />
+        <item itemvalue="PHPUnit.IncludeCategoriesTest.can_fetch_related_categories" />
+        <item itemvalue="PHPUnit.IncludeCategoriesTest.can_include_categories" />
+        <item itemvalue="PHPUnit.IncludeCategoriesTest.can_include_articles" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +220,9 @@
       <workItem from="1597764349759" duration="75000" />
       <workItem from="1597876837473" duration="7156000" />
       <workItem from="1598977010660" duration="20431000" />
+      <workItem from="1604945668183" duration="258000" />
+      <workItem from="1605025492551" duration="1200000" />
+      <workItem from="1605115113910" duration="12713000" />
     </task>
     <servers />
   </component>
@@ -251,18 +242,18 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2338" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599166532570" />
-    <state x="1920" y="595" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597967012008">
+    <state x="1920" y="200" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1605201980274">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1920" y="595" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597967012008" />
+    <state x="1920" y="200" width="1720" height="880" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605201980274" />
     <state x="2550" y="331" width="649" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597877505838">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2550" y="331" width="649" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597877505838" />
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599604634319">
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605211121680">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599604634319" />
+    <state x="2613" y="298" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211121680" />
     <state x="2657" y="301" width="436" height="475" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1599512232000">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -275,46 +266,46 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="266" key="GridCell.Tab.0.bottom" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom" timestamp="1605211567161">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.0.center" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211567161" />
+    <state width="1872" height="331" key="GridCell.Tab.0.center" timestamp="1605211567161">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.0.left" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
+    <state width="1872" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211567161" />
+    <state width="1872" height="331" key="GridCell.Tab.0.left" timestamp="1605211567160">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.0.right" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
+    <state width="1872" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211567160" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right" timestamp="1605211567161">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1872" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.1.bottom" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211567161" />
+    <state width="1872" height="274" key="GridCell.Tab.1.bottom" timestamp="1605204604179">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.1.center" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="274" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605204604179" />
+    <state width="1872" height="274" key="GridCell.Tab.1.center" timestamp="1605204604179">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.1.left" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="274" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605204604179" />
+    <state width="1872" height="274" key="GridCell.Tab.1.left" timestamp="1605204604179">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
-    <state width="1872" height="266" key="GridCell.Tab.1.right" timestamp="1601059079436">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1872" height="274" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605204604179" />
+    <state width="1872" height="274" key="GridCell.Tab.1.right" timestamp="1605204604179">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601059079436" />
-    <state width="1872" height="275" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607308771" />
+    <state width="1872" height="274" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605204604179" />
     <state x="2629" y="237" width="515" height="604" key="NewPhpClassDialog" timestamp="1599604626841">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -332,10 +323,10 @@
     </state>
     <state x="640" y="78" width="640" height="951" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601057274801" />
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599174701226" />
-    <state x="623" y="260" width="672" height="662" key="search.everywhere.popup" timestamp="1601057314148">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605211480532">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="260" width="672" height="662" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601057314148" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599607254250" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605211480532" />
   </component>
 </project>
