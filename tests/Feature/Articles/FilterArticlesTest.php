@@ -3,6 +3,7 @@
 namespace Tests\Feature\Articles;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -163,5 +164,38 @@ class FilterArticlesTest extends TestCase
             ->assertSee('Another Article')
             ->assertSee('Another Laravel Article')
             ->assertDontSee('Title2');
+    }
+
+    /** @test */
+    public function can_filter_articles_by_categories()
+    {
+        Article::factory()
+            ->times(2)
+            ->create();
+
+        $category = Category::factory()
+            ->hasArticles(2)
+            ->create();
+
+        $this->jsonApi()
+            ->filter(['categories'=> $category->getRouteKey()])
+            ->get(route('api.v1.articles.index'))
+            ->assertJsonCount(2, 'data')
+        ;
+    }
+
+    /** @test */
+    public function can_filter_articles_by_multiple_categories()
+    {
+        Article::factory()->times(2)->create();
+
+        $category = Category::factory()->hasArticles(2)->create();
+        $category2 = Category::factory()->hasArticles(3)->create();
+
+        $this->jsonApi()
+            ->filter(['categories'=> $category->getRouteKey().','.$category2->getRouteKey()])
+            ->get(route('api.v1.articles.index'))
+            ->assertJsonCount(5, 'data')
+        ;
     }
 }

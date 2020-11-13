@@ -25,6 +25,7 @@ class UpdateCategoriesTest extends TestCase
     public function authenticated_users_can_update_their_categories()
     {
         $category = Category::factory()->create();
+        dd($category->author);
 
         Sanctum::actingAs($category->user);
 
