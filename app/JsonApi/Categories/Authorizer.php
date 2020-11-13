@@ -72,9 +72,7 @@ class Authorizer extends AbstractAuthorizer
      */
     public function update($category, $request)
     {
-
         $this->authenticate();
-      //  $category->user_id = $this->auth()->id();
     }
 
     /**

@@ -15,8 +15,6 @@ class IncludeAuthorsTest extends TestCase
     {
         $article =Article::factory()->create();
 
-      //  $url = route('api.v1.articles.read',$article).'?include=authors';
-
         $this->jsonApi()
             ->includePaths('authors')
             ->get(route('api.v1.articles.read',$article))
@@ -25,7 +23,7 @@ class IncludeAuthorsTest extends TestCase
                 'related' => route('api.v1.articles.relationships.authors',$article)
             ])
             ->assertJsonFragment([
-                'self' => route('api.v1.articles.relationships.authors.replace',$article)
+                'self' => route('api.v1.articles.relationships.authors.read',$article)
             ])
         ;
 

@@ -7,11 +7,14 @@
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Categories/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Categories/Adapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/JsonApi/Categories/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Categories/Authorizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/FilterArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,25 +172,25 @@
       <recent name="$PROJECT_DIR$/tests/Feature/Articles" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CreateArticlesTest.authenticated_users_can_create_articles">
-    <configuration name="CreateArticlesTest.authenticated_users_can_create_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="authenticated_users_can_create_articles" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.DeleteCategoriesTest">
+    <configuration name="DeleteCategoriesTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Categories\DeleteCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.categories_is_required2" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="categories_is_required2" scope="Method" />
+    <configuration name="DeleteCategoriesTest.authenticated_users_can_delete_their_categories" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Categories\DeleteCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" method="authenticated_users_can_delete_their_categories" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateArticlesTest.categories_must_be_a_relationship_object" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\CreateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" method="categories_must_be_a_relationship_object" scope="Method" />
+    <configuration name="UpdateCategoriesTest.authenticated_users_can_update_others_categories" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Categories\UpdateCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" method="authenticated_users_can_update_others_categories" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateArticlesTest.authenticated_users_can_update_their_articles" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Articles\UpdateArticlesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" method="authenticated_users_can_update_their_articles" scope="Method" />
+    <configuration name="UpdateCategoriesTest.can_update_the_name_only" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Categories\UpdateCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" method="can_update_the_name_only" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="UpdateCategoriesTest.authenticated_users_can_update_their_categories" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Categories\UpdateCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" method="authenticated_users_can_update_their_categories" scope="Method" />
+    <configuration name="UpdateCategoriesTest.can_update_the_slug_only" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Categories\UpdateCategoriesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" method="can_update_the_slug_only" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -196,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.CreateArticlesTest.authenticated_users_can_create_articles" />
-        <item itemvalue="PHPUnit.UpdateCategoriesTest.authenticated_users_can_update_their_categories" />
-        <item itemvalue="PHPUnit.UpdateArticlesTest.authenticated_users_can_update_their_articles" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.categories_must_be_a_relationship_object" />
-        <item itemvalue="PHPUnit.CreateArticlesTest.categories_is_required2" />
+        <item itemvalue="PHPUnit.DeleteCategoriesTest" />
+        <item itemvalue="PHPUnit.DeleteCategoriesTest.authenticated_users_can_delete_their_categories" />
+        <item itemvalue="PHPUnit.UpdateCategoriesTest.can_update_the_slug_only" />
+        <item itemvalue="PHPUnit.UpdateCategoriesTest.can_update_the_name_only" />
+        <item itemvalue="PHPUnit.UpdateCategoriesTest.authenticated_users_can_update_others_categories" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +222,7 @@
       <workItem from="1605025492551" duration="1200000" />
       <workItem from="1605115113910" duration="13108000" />
       <workItem from="1605289412522" duration="1365000" />
-      <workItem from="1605292605130" duration="4078000" />
+      <workItem from="1605292605130" duration="7937000" />
     </task>
     <servers />
   </component>
@@ -263,26 +266,26 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="331" key="GridCell.Tab.0.bottom" timestamp="1605298014496">
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom" timestamp="1605303097024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605298014496" />
-    <state width="1872" height="331" key="GridCell.Tab.0.center" timestamp="1605298014496">
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
+    <state width="1872" height="331" key="GridCell.Tab.0.center" timestamp="1605303097024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605298014496" />
-    <state width="1872" height="331" key="GridCell.Tab.0.left" timestamp="1605298014496">
+    <state width="1872" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
+    <state width="1872" height="331" key="GridCell.Tab.0.left" timestamp="1605303097024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605298014496" />
-    <state width="1872" height="331" key="GridCell.Tab.0.right" timestamp="1605298014496">
+    <state width="1872" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right" timestamp="1605303097024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605298014496" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
     <state width="1872" height="274" key="GridCell.Tab.1.bottom" timestamp="1605292594680">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -320,10 +323,10 @@
     </state>
     <state x="640" y="78" width="640" height="951" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601057274801" />
     <state x="2560" y="52" width="640" height="975" key="find.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599174701226" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605297290037">
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605302298495">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="623" y="260" width="672" height="662" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601057314148" />
-    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605297290037" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605302298495" />
   </component>
 </project>

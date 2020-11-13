@@ -22,12 +22,11 @@ class UpdateCategoriesTest extends TestCase
     }
 
     /** @test */
-    public function authenticated_users_can_update_their_categories()
+    public function authenticated_users_can_update_categories()
     {
         $category = Category::factory()->create();
-        dd($category->author);
 
-        Sanctum::actingAs($category->user);
+        Sanctum::actingAs(User::factory()->create());
 
         $this->jsonApi()->withData([
                     'type' => 'categories',
@@ -47,35 +46,11 @@ class UpdateCategoriesTest extends TestCase
     }
 
     /** @test */
-    public function authenticated_users_can_update_others_categories()
+    public function can_update_the_name_only()
     {
         $category = Category::factory()->create();
 
         Sanctum::actingAs(User::factory()->create());
-
-        $this->jsonApi()->withData([
-                    'type' => 'categories',
-                    'id' => $category->getRouteKey(),
-                    'attributes' => [
-                        'name' => 'Name changed',
-                        'slug' => 'name-changed',
-                    ]
-            ])
-            ->patch(route('api.v1.categories.update', $category))
-            ->assertStatus(403);
-
-        $this->assertDatabaseMissing('categories', [
-            'name' => 'Name changed',
-            'slug' => 'name-changed',
-        ]);
-    }
-
-    /** @test */
-    public function can_update_the_title_only()
-    {
-        $category = Category::factory()->create();
-
-        Sanctum::actingAs($category->user);
 
         $this->jsonApi()->withData([
                     'type' => 'categories',
@@ -97,7 +72,7 @@ class UpdateCategoriesTest extends TestCase
     {
         $category = Category::factory()->create();
 
-        Sanctum::actingAs($category->user);
+        Sanctum::actingAs(User::factory()->create());
 
         $this->jsonApi()->withData([
                     'type' => 'categories',

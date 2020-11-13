@@ -30,14 +30,13 @@ class CreateArticlesTest extends TestCase
     public function authenticated_users_can_create_articles()
     {
         $user = User::factory()->create();
-        $category= Category::factory()->create();
+        $category = Category::factory()->create();
 
         $article = array_filter(Article::factory()->raw([
             'category_id' => null,
             'approved' => true //mass assigment check
-            ])
+        ])
         );
-
 
         $this->assertDatabaseMissing('articles', $article);
 
@@ -46,11 +45,17 @@ class CreateArticlesTest extends TestCase
         $this->jsonApi()->withData([
             'type' => 'articles',
             'attributes' => $article,
-            'relationships' =>[
-                'categories' =>[
-                    'data'=>[
+            'relationships' => [
+                'categories' => [
+                    'data' => [
                         'id' => $category->getRouteKey(),
                         'type' => 'categories'
+                    ]
+                ],
+                'authors' => [
+                    'data' => [
+                        'id' => $user->getRouteKey(),
+                        'type' => 'authors'
                     ]
                 ]
             ]
@@ -63,6 +68,45 @@ class CreateArticlesTest extends TestCase
             'slug' => $article['slug'],
             'content' => $article['content'],
         ]);
+    }
+
+    /** @test */
+    public function authenticated_users_cannot_create_articles_on_behalf_of_another_user()
+    {
+        $user = User::factory()->create();
+        $category = Category::factory()->create();
+
+        $article = array_filter(Article::factory()->raw([
+            'category_id' => null,
+            'user_id' => null,
+        ])
+        );
+
+        $this->assertDatabaseMissing('articles', $article);
+
+        Sanctum::actingAs($user);
+
+        $this->jsonApi()->withData([
+            'type' => 'articles',
+            'attributes' => $article,
+            'relationships' => [
+                'categories' => [
+                    'data' => [
+                        'id' => $category->getRouteKey(),
+                        'type' => 'categories'
+                    ]
+                ],
+                'authors' => [
+                    'data' => [
+                        'id' => User::factory()->create()->getRouteKey(),
+                        'type' => 'authors'
+                    ]
+                ]
+            ]
+        ])->post(route('api.v1.articles.create'))
+            ->assertStatus(403);
+
+        $this->assertDatabaseCount('articles', 0);
     }
 
     /** @test */
@@ -79,8 +123,7 @@ class CreateArticlesTest extends TestCase
             'attributes' => $article
         ])->post(route('api.v1.articles.create'))
             ->assertStatus(422)
-            ->assertSee('data\/attributes\/categories')
-        ;
+            ->assertSee('data\/attributes\/categories');
         $this->assertDatabaseMissing('articles', $article);
     }
 
@@ -96,8 +139,59 @@ class CreateArticlesTest extends TestCase
             'attributes' => $article
         ])->post(route('api.v1.articles.create'))
             ->assertStatus(422)
-            ->assertJsonFragment(['source'=>['pointer'=>'/data']])
-        ;
+            ->assertJsonFragment(['source' => ['pointer' => '/data']]);
+        $this->assertDatabaseMissing('articles', $article);
+    }
+
+    /** @test */
+    public function authors_is_required()
+    {
+        $article = Article::factory()->raw(['author_id' => '']);
+        $category = Category::factory()->create();
+
+        Sanctum::actingAs(User::factory()->create());
+
+        $this->jsonApi()->withData([
+            'type' => 'articles',
+            'attributes' => $article,
+            'relationships' => [
+                'categories' => [
+                    'data' => [
+                        'id' => $category->getRouteKey(),
+                        'type' => 'categories'
+                    ]
+                ]
+            ]
+        ])->post(route('api.v1.articles.create'))
+            ->assertStatus(422)
+            ->assertJsonFragment(['source' => ['pointer' => '/data']]);
+        $this->assertDatabaseMissing('articles', $article);
+    }
+
+    /** @test */
+    public function authors_must_be_a_relationship_object()
+    {
+        $article = Article::factory()->raw();
+        $category = Category::factory()->create();
+
+        $article['authors'] = 'slug';
+
+        Sanctum::actingAs(User::factory()->create());
+
+        $this->jsonApi()->withData([
+            'type' => 'articles',
+            'attributes' => $article,
+            'relationships' => [
+                'categories' => [
+                    'data' => [
+                        'id' => $category->getRouteKey(),
+                        'type' => 'categories'
+                    ]
+                ]
+            ]
+        ])->post(route('api.v1.articles.create'))
+            ->assertStatus(422)
+            ->assertSee('data\/attributes\/authors');
         $this->assertDatabaseMissing('articles', $article);
     }
 
@@ -234,7 +328,7 @@ class CreateArticlesTest extends TestCase
         $this->jsonApi()->withData([
             'type' => 'articles',
             'attributes' => $article,
-            'approved' =>true
+            'approved' => true
 
         ])->post(route('api.v1.articles.create'))
             ->assertSee(trans('validation.no_ending_dashes', ['attribute' => 'slug']))

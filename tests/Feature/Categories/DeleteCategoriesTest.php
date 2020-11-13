@@ -23,26 +23,16 @@ class DeleteCategoriesTest extends TestCase
     }
 
     /** @test */
-    public function authenticated_users_can_delete_their_categories()
+    public function authenticated_users_can_delete_categories()
     {
-        $article = Category::factory()->create();
+        $category = Category::factory()->create();
 
-        Sanctum::actingAs($article->user);
+        Sanctum::actingAs(User::factory()->create());
 
-        $this->jsonApi()->delete(route('api.v1.categories.delete',$article))
+        $this->jsonApi()->delete(route('api.v1.categories.delete',$category))
             ->assertStatus(204); //Not content
 
     }
 
-    /** @test */
-    public function authenticated_users_cannot_delete_others_categories()
-    {
-        $article = Category::factory()->create();
 
-        Sanctum::actingAs(User::factory()->create());
-
-        $this->jsonApi()->delete(route('api.v1.categories.delete',$article))
-            ->assertStatus(403); //Unauthorized
-
-    }
 }
