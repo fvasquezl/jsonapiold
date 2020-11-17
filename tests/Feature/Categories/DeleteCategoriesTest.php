@@ -34,5 +34,4 @@ class DeleteCategoriesTest extends TestCase
 
     }
 
-
 }

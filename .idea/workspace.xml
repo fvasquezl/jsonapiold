@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f977079c-1f0c-4e70-9e9d-0045fdd4ec5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Adapter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Authorizer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Articles/Validators.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/JsonApi/Categories/Authorizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/JsonApi/Categories/Authorizer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/CreateArticlesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/IncludeAuthorsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Articles/UpdateArticlesTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Categories/DeleteCategoriesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Categories/UpdateCategoriesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +215,9 @@
       <workItem from="1605025492551" duration="1200000" />
       <workItem from="1605115113910" duration="13108000" />
       <workItem from="1605289412522" duration="1365000" />
-      <workItem from="1605292605130" duration="7937000" />
+      <workItem from="1605292605130" duration="8237000" />
+      <workItem from="1605501437100" duration="216000" />
+      <workItem from="1605641062373" duration="2033000" />
     </task>
     <servers />
   </component>
@@ -266,26 +261,26 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2402" y="13" width="946" height="1051" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1599084821450" />
-    <state width="1872" height="331" key="GridCell.Tab.0.bottom" timestamp="1605303097024">
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom" timestamp="1605303427354">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
-    <state width="1872" height="331" key="GridCell.Tab.0.center" timestamp="1605303097024">
+    <state width="1872" height="331" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303427354" />
+    <state width="1872" height="331" key="GridCell.Tab.0.center" timestamp="1605303427354">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
-    <state width="1872" height="331" key="GridCell.Tab.0.left" timestamp="1605303097024">
+    <state width="1872" height="331" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303427354" />
+    <state width="1872" height="331" key="GridCell.Tab.0.left" timestamp="1605303427354">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
-    <state width="1872" height="331" key="GridCell.Tab.0.right" timestamp="1605303097024">
+    <state width="1872" height="331" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303427354" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right" timestamp="1605303427354">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1872" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1604945926127" />
-    <state width="1872" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303097024" />
+    <state width="1872" height="331" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1605303427354" />
     <state width="1872" height="274" key="GridCell.Tab.1.bottom" timestamp="1605292594680">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

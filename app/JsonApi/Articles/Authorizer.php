@@ -41,8 +41,11 @@ class Authorizer extends AbstractAuthorizer
      */
     public function create($type, $request)
     {
+        $this->authenticate();
 
-        $this->can('create', $type, $request);
+        if($request->has('data.relationships.authors')) {
+            $this->authorize('create',[$type, $request]);
+        }
     }
 
     /**
